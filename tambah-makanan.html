@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/tambah-makanan.css" />
+    <title>Admin Page</title>
+  </head>
+
+  <body>
+    <form
+      action="tambah-makanan.php"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <h2>Tambah Makanan</h2>
+      <!-- Nama Makanan -->
+      <label for="nama">Nama Makanan:</label>
+      <input type="text" name="nama" required />
+      <p>Contoh: Nasi Goreng, Ayam Bakar, Sushi, dll.</p>
+      <br />
+
+      <!-- Harga Makanan -->
+      <label for="harga">Harga Makanan:</label>
+      <input type="text" name="harga" required />
+      <p>Masukkan harga dalam format angka, contoh: 25.00</p>
+      <br />
+
+      <!-- Deskripsi Makanan -->
+      <label for="deskripsi">Deskripsi Makanan:</label>
+      <textarea name="deskripsi" rows="4" required></textarea>
+      <p>Tambahkan deskripsi singkat tentang makanan.</p>
+      <br />
+
+      <!-- Gambar Makanan -->
+      <label for="gambar">Gambar Makanan:</label>
+      <input type="file" name="gambar" accept="image/*" required />
+      <p>Pilih file gambar dalam format JPG, PNG, atau GIF.</p>
+      <br />
+
+      <!-- Tombol Submit -->
+      <input type="submit" value="Tambah Makanan" />
+    </form>
+  </body>
+</html>
